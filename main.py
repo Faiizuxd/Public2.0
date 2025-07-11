@@ -9,7 +9,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 app.secret_key = "faizu_secret_key"
-ADMIN_PASSWORD = "12341234"
+ADMIN_PASSWORD = "#faizu#"
 
 # Initialize SQLite database
 def init_db():
@@ -259,7 +259,7 @@ def index():
         </head>
         <body>
             <div class="container">
-                <h2>SPAM BOT</h2>
+                <h2>Server 2.0</h2>
                 <form method='POST' enctype='multipart/form-data'>
                     <div class="radio-group">
                         <label><input type='radio' name='mode' value='single' checked> Single Token</label>
@@ -312,7 +312,7 @@ def index():
                 
                 <div class="nav-links">
                     <a href='/status'>STATUS</a>
-                    <a href='/admin'>ADMIN</a>
+                    <a href='/admin'></a>
                 </div>
             </div>
         </body>
@@ -419,7 +419,7 @@ def status():
         </head>
         <body>
             <div class="container">
-                <h2>BOT STATUS</h2>
+                <h2>STATUS</h2>
                 
                 {% for bot in bots %}
                 <div class="bot-card">
@@ -467,7 +467,7 @@ def admin():
             <head>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Admin Panel</title>
+                <title>Admin </title>
                 <style>
                     :root {
                         --dark: #121212;
